@@ -1,4 +1,4 @@
-## [WSDM 2025] LightGNN: Simple Graph Neural Network for Recommendation
+## [WSDM'25] LightGNN: Simple Graph Neural Network for Recommendation
 <br/>
 <center class="half">
     <img src=https://github.com/user-attachments/assets/9ddc22ff-96f3-4fc2-874f-9af87a91a8a3 width=57.5% /><img src=https://github.com/user-attachments/assets/8e6220a5-23c0-435e-a508-78e2045b5ac0 width=42.5% />
