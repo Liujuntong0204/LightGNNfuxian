@@ -9,6 +9,13 @@
 ![image](https://github.com/user-attachments/assets/86c731fc-c44e-4b6b-ac4b-3f87748c476c)
 
 
+## News
+
+- [2025/01] LightGNN's code has been released. More exciting features are being developed. Stay tuned!
+- [2024/10] LightGNN has been accepted by _WSDM 2025_ conference.
+
+
+
 ## 1. Abstract
 Graph neural networks (GNNs) have demonstrated superior performance in collaborative recommendation through their ability to conduct high-order representation smoothing, effectively capturing structural information within users' interaction patterns. However, existing GNN paradigms face significant challenges in scalability and robustness when handling large-scale, noisy, and real-world datasets. To address these challenges, we present LightGNN, a lightweight and distillation-based GNN pruning framework designed to substantially reduce model complexity while preserving essential collaboration modeling capabilities. Our LightGNN framework introduces a computationally efficient pruning module that adaptively identifies and removes redundant edges and embedding entries for model compression. The framework is guided by a resource-friendly hierarchical knowledge distillation objective, whose intermediate
 layer augments the observed graph to maintain performance, particularly in high-rate compression scenarios. Extensive experiments on public datasets demonstrate LightGNN's effectiveness, significantly improving both computational efficiency and recommendation accuracy. Notably, LightGNN achieves an 80% reduction in edge count and 90% reduction in embedding entries while maintaining performance comparable to more complex state-of-the-art baselines. The implementation of our LightGNN model is available at the github repository: https://github.com/HKUDS/LightGNN.
