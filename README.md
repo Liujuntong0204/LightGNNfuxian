@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8e6220a5-23c0-435e-a508-78e2045b5ac0)
+## [WSDM 2025] LightGNN: Simple Graph Neural Network for Recommendation
 
 <div align="center">
 <img src=https://github.com/user-attachments/assets/8e6220a5-23c0-435e-a508-78e2045b5ac0 width=50% />
