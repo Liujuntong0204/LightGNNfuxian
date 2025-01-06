@@ -1,7 +1,7 @@
 ## [WSDM 2025] LightGNN: Simple Graph Neural Network for Recommendation
 
 <center class="half">
-    <img src=https://github.com/user-attachments/assets/9ddc22ff-96f3-4fc2-874f-9af87a91a8a3 width=60% /><img src=https://github.com/user-attachments/assets/8e6220a5-23c0-435e-a508-78e2045b5ac0 width=40% />
+    <img src=https://github.com/user-attachments/assets/9ddc22ff-96f3-4fc2-874f-9af87a91a8a3 width=55% /><img src=https://github.com/user-attachments/assets/8e6220a5-23c0-435e-a508-78e2045b5ac0 width=45% />
 </center>
 
 ![image](https://github.com/user-attachments/assets/86c731fc-c44e-4b6b-ac4b-3f87748c476c)
