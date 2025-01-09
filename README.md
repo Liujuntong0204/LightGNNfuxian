@@ -21,6 +21,8 @@ Your support is greatly appreciated😊
   Bradley Hand 
   Comic Sans MS -->
 
+<p align="center">If you find this code useful, please consider giving us a star🌟 Your support is greatly appreciated😊 
+</p>
 
 ## News
 - :star2: [2025/01] More examples have been updated, come and give them a try!:rocket::rocket::rocket:
