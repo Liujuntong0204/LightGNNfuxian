@@ -14,7 +14,7 @@ def str2bool(v):
 def parser_loader():
     parser = argparse.ArgumentParser(description='Options')    
     parser.add_argument('--mask_epoch', type=int, default=600, help='epoch number for the training phase with edge weights')
-    parser.add_argument('--fix_epoch', type=int, default=600, help='epoch number for the training phase without edge weights')
+    parser.add_argument('--fix_epoch', type=int, default=600, help='epoch number for the training phase without edge weights, i.e., fixed edge weights')
     parser.add_argument('--epoch_tea', default=600, type=int, help='number of epochs for teacher model')
     parser.add_argument('--use_dynamic_epoch', default=False, type=str2bool,help='whether to train for different training epochs in different pruning steps')
     parser.add_argument('--epoch_list', type=list, default=[0, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600], help="list of epoch numbers for different pruning steps")
@@ -128,7 +128,7 @@ def parser_loader():
 
     parser.add_argument('--dataset', default='gowalla', type=str, help='name of dataset')
     parser.add_argument('--tstEpoch', default=1, type=int, help='number of epoch to test while training')
-    parser.add_argument('--gpu', default='0', type=str, help='indicates which gpu to use')
+    parser.add_argument('--gpu', default='2', type=str, help='indicates which gpu to use')
     
     
     parser.add_argument('--train_2nd_best_gap', default=0.99, type=float, help='the allowable gap between the best result and the 2nd best')

@@ -172,10 +172,10 @@ def subspace_kernel(embeds1_hid, embeds2_hid, mask1, mask2 ,nodes1,prn, temp=1.0
 
 def subspace_hyperedge_contrast_loss_v3(usr_mask, item_mask,  usr_embs, item_embs, Uancs, Ipos,  weight, threshold, temp,prn):
 	if args.hyper_contr_resample:
-		print("###################Uancs size#############################")
-		print(len(Uancs))
-		print(len(Ipos))
-		print(Uancs)
+		# print("###################Uancs size#############################")
+		# print(len(Uancs))
+		# print(len(Ipos))
+		# print(Uancs)
 		Uancs = rd.sample(Uancs.tolist(), int(args.hyper_contr_resample * len(Uancs.tolist())))
 		Ipos = rd.sample(Ipos.tolist(), int(args.hyper_contr_resample * len(Ipos.tolist())))
 

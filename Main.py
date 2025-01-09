@@ -205,11 +205,11 @@ class Coach:
                     log(self.makePrint('Test', ep, reses_tst, tstFlag, epoch=epoch))
 
             if train_mask:
-                print(f"Train Edge Weights & Emb. before Pruning Run [{prn_run}] (Dataset {args.dataset} Get Mask) Epoch:[{ep}/{epoch}], Recall:[{reses_tst['Recall']:.5f}] NDCG:[{reses_tst['NDCG']:.5f}] | Best Recall:[{best_acc['Recall']:.5f}] Best NDCG:[{best_acc['NDCG']:.5f}] at Epoch:[{best_acc['Epoch']}] | Adj:[{edge_spar:.5f}%] Emb:[{emb_spar:.5f}%]", flush=True)
+                print(f"Train Edge Weights & Emb. before Pruning Run PRN:[{prn_run}] (Dataset {args.dataset} Get Mask) Epoch:[{ep}/{epoch}], Recall:[{reses_tst['Recall']:.5f}] NDCG:[{reses_tst['NDCG']:.5f}] | Best Recall:[{best_acc['Recall']:.5f}] Best NDCG:[{best_acc['NDCG']:.5f}] at Epoch:[{best_acc['Epoch']}] | Adj:[{edge_spar:.5f}%] Emb:[{emb_spar:.5f}%]", flush=True)
             else:
-                print(f"Train Emb. with Fixed Edge Weights before Pruning Run[{prn_run}] (Dataset {args.dataset} Fixed Mask) Epoch:[{ep}/{epoch}], Recall:[{reses_tst['Recall']:.5f}] NDCG:[{reses_tst['NDCG']:.5f}] | Best for now Recall:[{best_acc['Recall']:.5f}] Best NDCG:[{best_acc['NDCG']:.5f}] at Epoch:[{best_acc['Epoch']}] | Adj:[{edge_spar:.5f}%] Emb:[{emb_spar:.5f}%]",flush=True)
+                print(f"Train Emb. with Fixed Edge Weights before Pruning Run PRN:[{prn_run}] (Dataset {args.dataset} Fixed Mask) Epoch:[{ep}/{epoch}], Recall:[{reses_tst['Recall']:.5f}] NDCG:[{reses_tst['NDCG']:.5f}] | Best for now Recall:[{best_acc['Recall']:.5f}] Best NDCG:[{best_acc['NDCG']:.5f}] at Epoch:[{best_acc['Epoch']}] | Adj:[{edge_spar:.5f}%] Emb:[{emb_spar:.5f}%]",flush=True)
             
-                print(f"Fixed Mask PRN [{prn_run}] (Dataset {args.dataset} Fixed Mask) Epoch:[{ep}/{epoch}], Best for Global Recall:[{global_best_acc['Recall']:.5f}] Best NDCG:[{global_best_acc['NDCG']:.5f}] at Epoch:[{global_best_acc['Epoch']}] in PRN:[{global_best_acc['PRN']}] with [{global_best_acc['train or fixed']}] | Best Adj:[{global_best_acc['edge_spar']:.5f}%] Best Emb:[{global_best_acc['emb_spar']:.5f}%]",flush=True)
+                print(f"Train without Edge Weights before Pruning Run PRN:[{prn_run}] (Dataset {args.dataset} Fixed Mask) Epoch:[{ep}/{epoch}], Best for Global Recall:[{global_best_acc['Recall']:.5f}] Best NDCG:[{global_best_acc['NDCG']:.5f}] at Epoch:[{global_best_acc['Epoch']}] in PRN:[{global_best_acc['PRN']}] with [{global_best_acc['train or fixed']}] | Best Adj:[{global_best_acc['edge_spar']:.5f}%] Best Emb:[{global_best_acc['emb_spar']:.5f}%]",flush=True)
 
             print(f"Best for Global Recall:[{global_best_acc['Recall']:.5f}] Best NDCG:[{global_best_acc['NDCG']:.5f}] at Epoch:[{global_best_acc['Epoch']}] in PRN:[{global_best_acc['PRN']}] with [{global_best_acc['train or fixed']}] | Best Adj:[{global_best_acc['edge_spar']:.5f}%] Best Emb:[{global_best_acc['emb_spar']:.5f}%]",flush=True)
             
@@ -242,13 +242,13 @@ class Coach:
             tmp = t.load(args.middle_teacher_model)['model']
             if hasattr(tmp, 'middle_teacher'):
                 middle_teacher = tmp.middle_teacher.cuda()       
-                print("Use the middle teacher to direct the training of student")   
+                print("Use the middle teacher (Intermediate KD model) to direct the training of student")   
             elif hasattr(tmp, 'student'):
                 middle_teacher = tmp.student.cuda() 
-                print("A trained student model works as the middle teacher")                   
+                print("A trained student model works as the middle teacher (Intermediate KD model)")                   
             else:
                 middle_teacher = None
-                assert middle_teacher!=None, "No middle teacher is given"
+                assert middle_teacher!=None, "No middle teacher (Intermediate KD model) is given"
             del tmp
 
             if args.train_stu_from_break_point:                                        
