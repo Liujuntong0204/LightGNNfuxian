@@ -8,20 +8,23 @@
 
 ![image](https://github.com/user-attachments/assets/86c731fc-c44e-4b6b-ac4b-3f87748c476c)
 <br/>
-<center>
+
+
+<!-- <center>
 <font face="华文琥珀" size="5">
 If you find this code useful, please consider giving us a star🌟 
 </font>    
 <font face="华文琥珀" size="5">
 Your support is greatly appreciated😊        
 </font>    
-</center>
+</center> -->
 <!--   华文琥珀
   Centrale Sans Rounded Light 
   Bradley Hand 
   Comic Sans MS -->
 
-<p align="center">If you find this code useful, please consider giving us a star🌟 Your support is greatly appreciated😊 
+<p align="center">
+If you find this code useful, please consider giving us a star🌟 Your support is greatly appreciated😊 
 </p>
 
 ## News
