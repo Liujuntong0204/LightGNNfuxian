@@ -10,13 +10,18 @@
 <br/>
 <center>
 <font face="华文琥珀" size="5">
-If you find this code useful, please consider giving us a star🌟 Your support is greatly appreciated😊        
+If you find this code useful, please consider giving us a star🌟 
+</font>    
+<font face="华文琥珀" size="5">
+Your support is greatly appreciated😊        
 </font>    
 </center>
 <!--   华文琥珀
   Centrale Sans Rounded Light 
   Bradley Hand 
   Comic Sans MS -->
+
+
 ## News
 - :star2: [2025/01] More examples have been updated, come and give them a try!:rocket::rocket::rocket:
 - :star:[2025/01] LightGNN's code has been released. 
