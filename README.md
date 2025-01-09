@@ -8,28 +8,32 @@
 
 ![image](https://github.com/user-attachments/assets/86c731fc-c44e-4b6b-ac4b-3f87748c476c)
 <br/>
-
-
 <!-- <center>
+<font face="华文琥珀" size="5">
+If you find this code useful, please consider giving us a star🌟 Your support is greatly appreciated😊        
+</font>    
+</center> -->
+
+<p align="center">
 <font face="华文琥珀" size="5">
 If you find this code useful, please consider giving us a star🌟 
 </font>    
+</p>
+
+<p align="center"> 
 <font face="华文琥珀" size="5">
-Your support is greatly appreciated😊        
-</font>    
-</center> -->
+    Your support is greatly appreciated😊 
+</font> 
+</p>
+
+
 <!--   华文琥珀
   Centrale Sans Rounded Light 
   Bradley Hand 
   Comic Sans MS -->
-
-<p align="center">
-If you find this code useful, please consider giving us a star🌟 Your support is greatly appreciated😊 
-</p>
-
 ## News
 - :star2: [2025/01] More examples have been updated, come and give them a try!:rocket::rocket::rocket:
-- :star:[2025/01] LightGNN's code has been released. 
+- :star: [2025/01] LightGNN's code has been released. 
 - :star: [2024/10] LightGNN has been accepted by _WSDM 2025_ conference.
 
 
@@ -59,7 +63,7 @@ Please refer to *develop-environment.md* for more details on the development env
 After preparing the development environment, we provide some demo trained checkpoints of the teacher models and intermediate models (middle teacher models) based on Gowalla, Yelp, and Amazon datasets as examples to facilitate your quick start. Once the development environment is set up, you can run the following commands to quickly start the training process to get familiar with the code.
 
 But before that, you need to download the demo checkpoint files for these examples first. Just run the *download_demo_ckpts.sh* script in the *./inModels* directory to complete the download.
-```
+```Bash
 git clone https://github.com/HKUDS/LightGNN.git
 cd ./LightGNN/inModels
 bash download_demo_ckpts.sh
@@ -67,7 +71,7 @@ cd ..
 ```
 
 To get help information about the parameters, you can run the following command.
-```
+```Bash
 python Main.py --help
 ```
 *Note: All example commands in 3.1 to 3.4 are executed in the root directory of the LightGNN project, and the parameters involved are just examples, not guaranteed to be optimal settings.*
@@ -75,7 +79,7 @@ python Main.py --help
 ### 3.1 Train the final student model (supervised by the demo intermediate model provided by us)
 
 You can just start training to get the final pruned student model by running the following example commands (based on Gowalla dataset).
-```
+```Bash
 CUDA_VISIBLE_DEVICES=0 python Main.py \
     --dataset='gowalla' \
     --mask_epoch=300 `#300 is an example; increase it for better recommendation performance` \
@@ -106,7 +110,7 @@ CUDA_VISIBLE_DEVICES=0 python Main.py \
 
 ### 3.2 Train the intermediate KD model (supervised by the demo original teacher model) as the final teacher model
 You can also directly train the intermediate KD model (i.e., the middle teacher model), supervised by the demo original teacher model provided by us. After completion, you can supervise the training of your final student model using this intermediate model trained by yourself (refer to section 3.1). Also take Gowalla dataset as an example.
-```
+```Bash
  CUDA_VISIBLE_DEVICES=0 python Main.py \
     --dataset='gowalla' \
     --mask_epoch=500 \
@@ -130,7 +134,7 @@ You can also directly train the intermediate KD model (i.e., the middle teacher 
 
 ### 3.3 Train from scratch (train the original teacher model)
 Of course, you can also train from scratch, i.e.,  training your own original teacher model. Then, use this trained original teacher model to guide the training of your own intermediate model (see 3.2). Finally, utilize the trained intermediate model to supervise the training of your own final student model (see 3.1). Throughout this process, you can adjust the corresponding parameters to achieve the desired trade-off between sparsity and performance. Also take Gowalla dataset as an example.
-```
+```Bash
 CUDA_VISIBLE_DEVICES=0 python pretrainTeacher.py \
     --dataset='gowalla' \
     --epoch_tea=1000 \
@@ -145,7 +149,7 @@ CUDA_VISIBLE_DEVICES=0 python pretrainTeacher.py \
 ### 3.4 More Quick-Start Examples
 We offer more quick-start examples to help you get started quickly (based on the Gowalla, Yelp, Amazon datasets), and the scripts for these examples are placed in the *./example_scripts/* directory. You can follow the steps below to run these examples. For instance, to run the example in section 3.1, we can alternatively run the following commands in the LightGNN's root directory:
 
-```
+```Bash
 cp ./example_scripts/example_train_final_student_lightgnn_gowalla.sh ./
 bash example_train_final_student_lightgnn_gowalla.sh
 ```
