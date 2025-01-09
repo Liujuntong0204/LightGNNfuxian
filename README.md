@@ -7,12 +7,20 @@
 <br/>
 
 ![image](https://github.com/user-attachments/assets/86c731fc-c44e-4b6b-ac4b-3f87748c476c)
-
-
+<br/>
+<center>
+<font face="华文琥珀" size="5">
+If you find this code useful, please consider giving us a star🌟 Your support is greatly appreciated😊        
+</font>    
+</center>
+<!--   华文琥珀
+  Centrale Sans Rounded Light 
+  Bradley Hand 
+  Comic Sans MS -->
 ## News
-
-- [2025/01] LightGNN's code has been released. More exciting features are being developed. Stay tuned!
-- [2024/10] LightGNN has been accepted by _WSDM 2025_ conference.
+- :star2: [2025/01] More examples have been updated, come and give them a try!:rocket::rocket::rocket:
+- :star:[2025/01] LightGNN's code has been released. 
+- :star: [2024/10] LightGNN has been accepted by _WSDM 2025_ conference.
 
 
 
@@ -135,3 +143,14 @@ bash example_train_final_student_lightgnn_gowalla.sh
 
 # Supplementary Material
 See "**Supplementary Material.pdf**" for __more details__ of our LightGNN framework, including detailed *Algorithm*, *Robustness against Noise*, etc.
+
+# Citation
+If you find LightGNN useful in your research, applications, or teaching, please kindly cite:
+```
+@article{chen2025lightgnn,
+  title={LightGNN: Simple Graph Neural Network for Recommendation},
+  author={Chen, Guoxuan and Xia, Lianghao and Huang, Chao},
+  journal={arXiv preprint arXiv:2501.03228},
+  year={2025}
+}
+```
