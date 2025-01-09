@@ -14,17 +14,13 @@ If you find this code useful, please consider giving us a star🌟 Your support 
 </font>    
 </center> -->
 
-<p align="center">
-<font face="华文琥珀" size="5">
-If you find this code useful, please consider giving us a star🌟 
-</font>    
-</p>
+<br/>
+<br/>
 
-<p align="center"> 
-<font face="华文琥珀" size="5">
-    Your support is greatly appreciated😊 
-</font> 
-</p>
+
+![image](https://github.com/user-attachments/assets/54677ee5-85ad-4020-b39f-f3d8b34a7243)
+
+
 
 
 <!--   华文琥珀
