@@ -40,10 +40,19 @@ Please refer to *develop-environment.md* for more details on the development env
 
 After preparing the development environment, we provide some demo trained checkpoints of the teacher models and intermediate models (middle teacher models) based on Gowalla, Yelp, and Amazon datasets as examples to facilitate your quick start. Once the development environment is set up, you can run the following commands to quickly start the training process to get familiar with the code.
 
+But before that, you need to download the demo checkpoint files for these examples first. Just run the *download_demo_ckpts.sh* script in the *./inModels* directory to complete the download.
+```
+git clone https://github.com/HKUDS/LightGNN.git
+cd ./LightGNN/inModels
+bash download_demo_ckpts.sh
+cd ..
+```
+
 To get help information about the parameters, you can run the following command.
 ```
 python Main.py --help
 ```
+*Note: All example commands in 3.1 to 3.4 are executed in the root directory of the LightGNN project, and the parameters involved are just examples, not guaranteed to be optimal settings.*
 
 ### 3.1 Train the final student model (supervised by the demo intermediate model provided by us)
 
@@ -122,8 +131,6 @@ We offer more quick-start examples to help you get started quickly (based on the
 cp ./example_scripts/example_train_final_student_lightgnn_gowalla.sh ./
 bash example_train_final_student_lightgnn_gowalla.sh
 ```
-
-
 
 
 # Supplementary Material
