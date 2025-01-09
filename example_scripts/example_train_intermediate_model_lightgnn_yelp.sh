@@ -18,4 +18,4 @@
     --teacher_model=./inModels/yelp/example_teacher_model_dim64_yelp.mod  `#Necessary for training intermediate model`\
     --distill_from_middle_model=False `#Necessary for training intermediate model` \
     --distill_from_teacher_model=True `#Necessary for training intermediate model` \
-    --train_middle_model=True | tee ./logs/intermediate_yelp_example2_log.4 `#Necessary for training intermediate model`
+    --train_middle_model=True | tee ./logs/intermediate_yelp_example2_log `#Necessary for training intermediate model`

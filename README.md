@@ -134,7 +134,7 @@ CUDA_VISIBLE_DEVICES=0 python pretrainTeacher.py \
     --latdim=64 \
     --gnn_layer=8 \
     --model_save_path=./outModels/gowalla/example3/checkpoints/tea_ckpts  \
-    --his_save_path=./outModels/gowalla/example3/history/tea_his  | tee ./logs/teacher_gowalla_log
+    --his_save_path=./outModels/gowalla/example3/history/tea_his  | tee ./logs/teacher_gowalla_example3_log
 ```
 
 ### 3.4 More Quick-Start Examples
