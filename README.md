@@ -23,7 +23,7 @@ If you find this code useful, please consider giving us a star🌟 Your support 
   Bradley Hand 
   Comic Sans MS -->
 ## News
-- :star2: [2025/01] More examples have been updated, come and give them a try!:rocket::rocket::rocket:
+- :star2: [2025/01] More examples have been updated, come and give them a try! :rocket::rocket::rocket:
 - :star: [2025/01] LightGNN's code has been released. 
 - :star: [2024/10] LightGNN has been accepted by _WSDM 2025_ conference.
 
