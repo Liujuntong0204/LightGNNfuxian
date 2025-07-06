@@ -239,7 +239,7 @@ class Coach:
 
         elif args.distill_from_middle_model:
             teacher = None
-            tmp = t.load(args.middle_teacher_model)['model']
+            tmp = t.load(args.middle_teacher_model, weights_only=False)['model']
             if hasattr(tmp, 'middle_teacher'):
                 middle_teacher = tmp.middle_teacher.cuda()       
                 print("Use the middle teacher (Intermediate KD model) to direct the training of student")   
