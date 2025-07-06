@@ -128,7 +128,7 @@ def parser_loader():
 
     parser.add_argument('--dataset', default='gowalla', type=str, help='name of dataset')
     parser.add_argument('--tstEpoch', default=1, type=int, help='number of epoch to test while training')
-    parser.add_argument('--gpu', default='2', type=str, help='indicates which gpu to use')
+    parser.add_argument('--gpu', default='0', type=str, help='indicates which gpu to use')
     
     
     parser.add_argument('--train_2nd_best_gap', default=0.99, type=float, help='the allowable gap between the best result and the 2nd best')
